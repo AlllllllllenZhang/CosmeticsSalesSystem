@@ -1,0 +1,13 @@
+//////////////默认管理员账号密码 test test/////////
+
+connect 'jdbc:derby:化妆品;create=true';
+
+create table admin(aUser char(10) primary key,aPassword char(20));
+
+insert into admin values('test','test');
+
+create table customer(cUser char(10) primary key,cName char(10),cCell char(15),cPassword char(20));
+
+insert into customer values('Bunny','I am','18865439876','Bunny');
+
+create table goods(gID char(10) primary key,gName char(10),gPrice float,gCategory varchar(20));
